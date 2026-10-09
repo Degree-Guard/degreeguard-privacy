@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Politique de confidentialité de DegreeGuard : localisation, données météo, conservation et suppression.">
+  <title>DegreeGuard — Politique de confidentialité</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { margin: 0; font: 1.05rem/1.75 system-ui, sans-serif; color: #192b3a; background: #f5f8fa; }
+    main { max-width: 760px; margin: auto; padding: 48px 24px 64px; }
+    h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.2; font-weight: 600; }
+    h2 { font-size: 1.35rem; line-height: 1.35; margin-top: 2rem; }
+    a { color: #005fa3; text-underline-offset: 3px; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+    p { margin: 1rem 0; }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e3edf5; background: #121a22; }
+      a { color: #9ed3ff; }
+    }
+  </style>
+</head>
+<body>
+<main>
+<h1>DegreeGuard — Politique de confidentialité</h1>
+<p>Version du 9 octobre 2026.</p>
+<h2>Responsable et contact</h2>
+<p>Responsable : <strong>Gaël Le Moëllic</strong>. Contact confidentialité : <a href="mailto:gael.lm@gmail.com">gael.lm@gmail.com</a>.</p>
+<h2>Données et finalités</h2>
+<p>DegreeGuard surveille la température aux lieux que vous choisissez afin de vous notifier lorsqu’un seuil est franchi. Aucun compte n’est requis. L’application n’intègre ni publicité ni outil d’analyse d’usage.</p>
+<p>Sur votre appareil, elle conserve les règles d’alerte, seuils, messages personnalisés, lieux et coordonnées, unités et préférences, la dernière position GPS obtenue et les derniers résultats nécessaires à la surveillance. Les données de graphique sont également gardées temporairement en mémoire.</p>
+<p>La localisation est facultative. Vous pouvez rechercher une ville ou saisir des coordonnées sans donner accès au GPS. Lorsque vous utilisez une fonction GPS, Android demande votre permission après une explication dans l’application. Une position approximative peut être utilisée si vous refusez la précision. Vous pouvez retirer la permission dans les réglages Android.</p>
+<p>L’acquisition GPS a lieu uniquement lorsque l’application est visible. Pour les alertes GPS déjà activées, rouvrir l’application actualise la position si la permission est toujours accordée. Les contrôles en arrière-plan n’acquièrent pas une nouvelle position : ils réutilisent la dernière position enregistrée, même si la permission GPS a ensuite été retirée. Rouvrez l’application après un déplacement ou supprimez les données locales pour effacer la position enregistrée. Sans position enregistrée, la vérification GPS est incomplète.</p>
+<h2>Destinataires et transmissions</h2>
+<p>Les coordonnées des lieux surveillés sont transmises par HTTPS à l’API météo Open-Meteo, y compris pour les contrôles en arrière-plan. La recherche de villes transmet le texte recherché et la langue à son API de géocodage. Ces connexions exposent également l’adresse IP au destinataire. Les messages personnalisés et seuils ne sont pas envoyés à cette API. La localisation utilise le fournisseur de position Google Play Services sur l’appareil, conformément aux réglages Android.</p>
+<p>Open-Meteo est exploité par OpenMeteo GmbH, Hintere Schilligmatte 6, 6463 Bürglen (UR), Suisse ; contact : info@open-meteo.com. Selon sa <a href="https://open-meteo.com/en/terms">politique pour l’API gratuite</a>, le service peut conserver des journaux contenant notamment l’adresse IP et les coordonnées pour la maintenance et la prévention des abus, puis les supprimer après 90 jours. La suppression dans DegreeGuard ne supprime pas les journaux chez Open-Meteo. Contactez ce fournisseur pour les demandes relatives à ses traitements.</p>
+<h2>Conservation, sauvegarde et suppression</h2>
+<p>Les données locales restent jusqu’à leur suppression ou la désinstallation. Dans « Confidentialité et données », « Supprimer toutes les données locales » efface les règles, lieux, préférences et dernière position GPS. Les notifications DegreeGuard affichées sont annulées. Les contrôles planifiés n’ont plus de règle à surveiller jusqu’à la création de nouvelles alertes. Les autorisations Android ne sont pas modifiées par cette action.</p>
+<p>Les sauvegardes cloud Android sont désactivées. Les règles de sauvegarde et de transfert entre appareils excluent toutes les données de l’application, y compris DataStore et la base de planification WorkManager. Les requêtes météo ne sont pas journalisées par DegreeGuard, en debug comme en production.</p>
+<h2>Vos choix et droits</h2>
+<p>Vous pouvez consulter la dernière position enregistrée dans « Confidentialité et données », modifier ou supprimer vos alertes et effacer toutes les données locales. Contactez le responsable ci-dessus pour toute question et demande d’accès, de rectification ou de suppression. Vous pouvez saisir l’autorité de protection des données compétente, notamment la CNIL en France.</p>
+<h2>Données météo et modifications</h2>
+<p>Les données météo proviennent d’<a href="https://open-meteo.com/">Open-Meteo</a> sous licence <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Les changements de pratiques nécessitent une mise à jour de cette politique, du résumé accessible dans l’application et des déclarations Google Play.</p>
+<h2>Consultation de cette politique</h2>
+<p>La page publique est hébergée sur GitHub Pages. GitHub indique conserver l’adresse IP des visiteurs à des fins de sécurité. Consultez sa <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">politique de confidentialité</a> pour les modalités de ce traitement. La page ne contient ni outil d’analyse d’usage, ni formulaire, ni script de suivi.</p>
+</main>
+</body>
+</html>
