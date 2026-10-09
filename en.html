@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DegreeGuard privacy policy: location, weather data, retention and deletion.">
+  <link rel="alternate" hreflang="fr" href="./">
+  <link rel="alternate" hreflang="en" href="en.html">
+  <title>DegreeGuard — Privacy policy</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { margin: 0; font: 1.05rem/1.75 system-ui, sans-serif; color: #192b3a; background: #f5f8fa; }
+    main { max-width: 760px; margin: auto; padding: 48px 24px 64px; }
+    h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.2; font-weight: 600; }
+    h2 { font-size: 1.35rem; line-height: 1.35; margin-top: 2rem; }
+    a { color: #005fa3; text-underline-offset: 3px; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+    p { margin: 1rem 0; }
+    nav { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; }
+    nav a { padding: 8px 12px; border: 1px solid currentColor; border-radius: 8px; }
+    nav a[aria-current="page"] { font-weight: 700; text-decoration: none; }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e3edf5; background: #121a22; }
+      a { color: #9ed3ff; }
+    }
+  </style>
+</head>
+<body>
+<main>
+<nav aria-label="Privacy policy language">
+  <a href="./" lang="fr" hreflang="fr">Français</a>
+  <a href="en.html" lang="en" hreflang="en" aria-current="page">English</a>
+</nav>
+<h1>DegreeGuard — Privacy policy</h1>
+<p>Version dated October 9, 2026.</p>
+<h2>Controller and contact</h2>
+<p>Controller: <strong>Gaël Le Moëllic</strong>. Privacy contact: <a href="mailto:gael.lm@gmail.com">gael.lm@gmail.com</a>.</p>
+<h2>Data and purposes</h2>
+<p>DegreeGuard monitors the temperature at the places you choose and notifies you when a threshold is crossed. No account is required. The app does not include advertising or usage analytics.</p>
+<p>On your device, the app stores alert rules, thresholds, personalized messages, places and coordinates, units and preferences, the last GPS location obtained and the latest results needed for monitoring. Graph data is also temporarily kept in memory.</p>
+<p>Location access is optional. You can search for a city or enter coordinates without granting GPS access. When you use a GPS feature, Android asks for permission after an explanation in the app. An approximate location can be used if you decline precise access. You can revoke permission in Android settings.</p>
+<p>GPS acquisition takes place only while the app is visible. For GPS alerts that are already enabled, reopening the app updates the location if permission is still granted. Background checks do not acquire a new location: they reuse the last saved position, even if GPS permission has since been revoked. Reopen the app after moving, or delete local data to erase the saved position. Without a saved position, the GPS check is incomplete.</p>
+<h2>Recipients and transmissions</h2>
+<p>The coordinates of monitored places are transmitted over HTTPS to the Open-Meteo weather API, including during background checks. City searches send the search text and language to its geocoding API. These connections also expose your IP address to the recipient. Personalized messages and thresholds are not sent to this API. Location access uses the Google Play Services location provider on the device, in accordance with Android settings.</p>
+<p>Open-Meteo is operated by OpenMeteo GmbH, Hintere Schilligmatte 6, 6463 Bürglen (UR), Switzerland; contact: info@open-meteo.com. According to its <a href="https://open-meteo.com/en/terms">free API privacy policy</a>, the service may retain logs containing information such as IP addresses and coordinates for maintenance and abuse prevention, then delete them after 90 days. Deleting data in DegreeGuard does not delete logs held by Open-Meteo. Contact that provider for requests concerning its processing.</p>
+<h2>Retention, backup and deletion</h2>
+<p>Local data remains until you delete it or uninstall the app. Under “Privacy and data”, “Delete all local data” erases rules, places, preferences and the last GPS position. Displayed DegreeGuard notifications are cancelled. Scheduled checks have no rules to monitor until you create new alerts. This action does not change Android permissions.</p>
+<p>Android cloud backups are disabled. Backup and device transfer rules exclude all app data, including DataStore and the WorkManager scheduling database. DegreeGuard does not log weather requests, in either debug or production builds.</p>
+<h2>Your choices and rights</h2>
+<p>You can view the last saved position under “Privacy and data”, edit or delete alerts and erase all local data. Contact the controller above with questions or requests for access, rectification or deletion. You may contact the competent data protection authority, including the CNIL in France.</p>
+<h2>Weather data and changes</h2>
+<p>Weather data comes from <a href="https://open-meteo.com/">Open-Meteo</a> under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> license. Changes in data practices require updates to this policy, the summary available in the app and the Google Play declarations.</p>
+<h2>Viewing this policy</h2>
+<p>The public page is hosted on GitHub Pages. GitHub states that it retains visitors’ IP addresses for security purposes. See its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a> for details of this processing. The page contains no usage analytics, forms or tracking scripts.</p>
+</main>
+</body>
+</html>
